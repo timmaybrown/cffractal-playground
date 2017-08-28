@@ -1,0 +1,40 @@
+{
+    "name":"cffractal-playground",
+    "version":"2.3.0",
+    "location":"",
+    "author":"You",
+    "slug":"cffractal-playground",
+    "createPackageDirectory":false,
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/timmaybrown/cffractal-playground"
+    },
+    "bugs":"https://github.com/timmaybrown/cffractal-playground/issues",
+    "shortDescription":"cffractal-playground",
+    "contributors":[
+        
+    ],
+    "ignore":[
+        
+    ],
+    "devDependencies":{
+        "testbox":"^2.4.0",
+        "relax":"^2.2.0+00032"
+    },
+    "installPaths":{
+        "coldbox":"coldbox",
+        "testbox":"testbox",
+        "relax":"modules/relax",
+        "cbswagger":"modules/cbswagger",
+        "cffractal":"modules\\cffractal"
+    },
+    "dependencies":{
+        "coldbox":"^4.3.0",
+        "cbswagger":"^1.1.0",
+        "cffractal":"^5.0.1"
+    },
+    "scripts":{
+        "postVersion":"package set location='https://github.com/timmaybrown/cffractal-playground/archive/v`package version`.zip'",
+        "postPublish":"!git push --follow-tags"
+    }
+}
